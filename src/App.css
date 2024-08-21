@@ -1,12 +1,7 @@
-
-.nav-slider .slick-slide {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
+/* 
 .nav-slider .slick-track {
   padding-bottom: 20px !important;
-}
+} */
 .slick-dots li.slick-active button:before {
   color: #e67e22 !important;
 }
