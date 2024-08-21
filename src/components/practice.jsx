@@ -121,7 +121,7 @@ const Practice = () => {
       </h1>
       <div className="container mx-auto xl:max-w-[1100px] px-4 md:py-10 py-5 relative">
         <button
-          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[40%] xl:left-[-7%] left-1/2 cursor-pointer ps-2 z-[1]"
+          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[400px]:bottom-[31%] bottom-[40%] xl:left-[-7%] left-1/2 cursor-pointer ps-2 z-[1]"
           onClick={() => sliderRef1?.current?.slickPrev()}
         >
           <img
@@ -131,7 +131,7 @@ const Practice = () => {
           />
         </button>
         <button
-          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[40%] xl:right-[-7%] right-1/2 cursor-pointer pe-2 z-[1]"
+          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[400px]:bottom-[31%] bottom-[40%] xl:right-[-7%] right-1/2 cursor-pointer pe-2 z-[1]"
           onClick={() => sliderRef1?.current?.slickNext()}
         >
           <img
