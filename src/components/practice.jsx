@@ -121,16 +121,24 @@ const Practice = () => {
       </h1>
       <div className="container mx-auto xl:max-w-[1100px] px-4 md:py-10 py-5 relative">
         <button
-          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[38%] xl:left-[-7%] left-1/2 cursor-pointer ps-2"
+          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[40%] xl:left-[-7%] left-1/2 cursor-pointer ps-2 z-[1]"
           onClick={() => sliderRef1?.current?.slickPrev()}
         >
-          <img src={prevarrow} alt="Previous Arrow" />
+          <img
+            src={prevarrow}
+            alt="Previous Arrow"
+            className="sm:max-w-[56px] sm:max-h-[56px] max-w-10 max-h-10"
+          />
         </button>
         <button
-          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[38%] xl:right-[-7%] right-1/2 cursor-pointer pe-2"
+          className="absolute xl:bottom-1/2 lg:bottom-[16%] md:bottom-[26%] sm:bottom-[30%] min-[376px]:bottom-[31%] bottom-[40%] xl:right-[-7%] right-1/2 cursor-pointer pe-2 z-[1]"
           onClick={() => sliderRef1?.current?.slickNext()}
         >
-          <img src={nextarrow} alt="Next Arrow" />
+          <img
+            src={nextarrow}
+            alt="Next Arrow"
+            className="sm:max-w-[56px] sm:max-h-[56px] max-w-10 max-h-10"
+          />
         </button>
         <Slider className="pb-12 sm:pt-0" {...sliderSettingsMain}>
           {SLIDEDATA.map((obj, i) => (
