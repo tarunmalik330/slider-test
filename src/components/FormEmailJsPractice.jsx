@@ -16,7 +16,6 @@ const FormEmailJsPractice = () => {
   });
 
   const [formErrors, setFormErrors] = useState({});
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
@@ -87,7 +86,6 @@ const FormEmailJsPractice = () => {
               user_email: "",
               message: "",
             });
-            setFormErrors({});
           },
           (error) => {
             console.log("FAILED...", error.text);
@@ -118,7 +116,6 @@ const FormEmailJsPractice = () => {
               type="text"
               value={formValues.user_name}
               onChange={handleChange}
-              required
             />
             {formErrors.user_name && (
               <p className="text-red-500 font-medium text-sm">
@@ -150,7 +147,6 @@ const FormEmailJsPractice = () => {
               value={formValues.user_number}
               onChange={handleChange}
               maxLength="10"
-              required
             />
             {formErrors.user_number && (
               <p className="text-red-500 font-medium text-sm">
@@ -166,7 +162,6 @@ const FormEmailJsPractice = () => {
               type="password"
               value={formValues.user_password}
               onChange={handleChange}
-              required
             />
             {formErrors.user_password && (
               <p className="text-red-500 font-medium text-sm">
@@ -182,7 +177,6 @@ const FormEmailJsPractice = () => {
               type="password"
               value={formValues.user_confirmPassword}
               onChange={handleChange}
-              required
             />
             {formErrors.user_confirmPassword && (
               <p className="text-red-500 font-medium text-sm">
@@ -198,7 +192,6 @@ const FormEmailJsPractice = () => {
               type="email"
               value={formValues.user_email}
               onChange={handleChange}
-              required
             />
             {formErrors.user_email && (
               <p className="text-red-500 font-medium text-sm">
@@ -213,7 +206,6 @@ const FormEmailJsPractice = () => {
               name="message"
               value={formValues.message}
               onChange={handleChange}
-              required
             />
             {formErrors.message && (
               <p className="text-red-500 font-medium text-sm">
@@ -224,7 +216,7 @@ const FormEmailJsPractice = () => {
           <input
             type="submit"
             value="Submit"
-            className="border border-solid mx-auto max-w-[150px] text-white text-[25px] font-bold bg-lime-950 border-lime-950 cursor-pointer py-[12px] px-[40px] rounded-[12px] mt-7"
+            className="border border-solid mx-auto max-w-[150px] text-white text-[25px] font-bold bg-lime-950 border-lime-950 cursor-pointer py-[12px] px-[40px] rounded-[12px] mt-7 resize-none"
           />
         </form>
       </div>
