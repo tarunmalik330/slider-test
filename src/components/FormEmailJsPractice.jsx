@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Lable } from "./common/LableInput";
 
 const FormEmailJsPractice = () => {
   const form = useRef();
@@ -110,9 +111,7 @@ const FormEmailJsPractice = () => {
           action=""
         >
           <div className="flex flex-col gap-3">
-            <label className="text-black font-semibold text-4xl" htmlFor="name">
-              Name
-            </label>
+            <Lable htmlFor="name" lableName="Name" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_name"
@@ -128,12 +127,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="lastName"
-            >
-              Last Name
-            </label>
+            <Lable htmlFor="lastName" lableName="Last Name" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_lastName"
@@ -148,12 +142,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="number"
-            >
-              Number
-            </label>
+            <Lable htmlFor="number" lableName="Number" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_number"
@@ -170,12 +159,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="password"
-            >
-              Password
-            </label>
+            <Lable htmlFor="password" lableName="Password" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_password"
@@ -191,12 +175,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="confirmPassword"
-            >
-              Confirm Password
-            </label>
+            <Lable htmlFor="confirmPassword" lableName="Confirm Password" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_confirmPassword"
@@ -212,12 +191,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="email"
-            >
-              Email
-            </label>
+            <Lable htmlFor="email" lableName="Email" />
             <input
               className="border-[2px] border-solid border-gray-500 outline-none text-gray-500 text-2xl font-medium w-full rounded-[8px] p-[10px]"
               name="user_email"
@@ -233,12 +207,7 @@ const FormEmailJsPractice = () => {
             )}
           </div>
           <div className="flex flex-col gap-3">
-            <label
-              className="text-black font-semibold text-4xl"
-              htmlFor="message"
-            >
-              Message
-            </label>
+            <Lable htmlFor="message" lableName="Message" />
             <textarea
               className="text-2xl font-medium bg-orange-100 border-[2px] border-solid border-gray-500 outline-none text-gray-500 w-full rounded-[8px] p-[10px]"
               name="message"
